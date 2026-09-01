@@ -46,6 +46,12 @@ export function MajorTriads() {
 
   return (
     <div className="flex flex-col gap-6">
+      {/* Description */}
+      <p className="text-sm text-muted-foreground">
+        A major triad is built from 3 notes: the <strong className="text-foreground">root</strong>, a <strong className="text-foreground">major 3rd</strong> (4 semitones up), and a <strong className="text-foreground">perfect 5th</strong> (7 semitones up).
+        Select a root note to see every occurrence of those 3 notes across the full fretboard.
+      </p>
+
       {/* Root selector */}
       <div className="flex items-center gap-3 flex-wrap">
         <label className="text-sm text-muted-foreground" htmlFor="triad-root">Root note</label>

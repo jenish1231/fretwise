@@ -64,6 +64,12 @@ export function HarmonizingChords() {
 
   return (
     <div className="flex flex-col gap-6">
+      {/* Description */}
+      <p className="text-sm text-muted-foreground">
+        Harmonizing a major scale means building a triad on every scale degree using only notes from that key.
+        Each degree produces a chord with a fixed quality — the result is 7 diatonic chords that all sound "in key" together.
+        Select a key to see its chord set, then click any chord to visualize its notes on the fretboard.
+      </p>
 
       {/* Key selector */}
       <div className="flex items-center gap-3">
