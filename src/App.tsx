@@ -3,14 +3,18 @@ import { NoteGenerator } from "@/components/note-generator"
 import { GuitarFretboard } from "@/components/guitar-fretboard"
 import { FingeringPractice } from "@/components/fingering-practice"
 import { OctaveShapes } from "@/components/octave-shapes"
+import { MajorTriads } from "@/components/major-triads"
+import { HarmonizingChords } from "@/components/harmonizing-chords"
 import { cn } from "@/lib/utils"
 
-type Page = "notes" | "fingering" | "octaves"
+type Page = "notes" | "fingering" | "octaves" | "triads" | "harmony"
 
 const TABS: { id: Page; label: string }[] = [
   { id: "notes", label: "Random Notes" },
   { id: "fingering", label: "Fingering Practice" },
   { id: "octaves", label: "Octave Shapes" },
+  { id: "triads", label: "Major Triads" },
+  { id: "harmony", label: "Harmonizing Chords" },
 ]
 
 export default function App() {
@@ -57,6 +61,8 @@ export default function App() {
 
       {page === "fingering" && <FingeringPractice />}
       {page === "octaves" && <OctaveShapes />}
+      {page === "triads" && <MajorTriads />}
+      {page === "harmony" && <HarmonizingChords />}
     </div>
   )
 }
