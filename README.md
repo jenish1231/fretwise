@@ -1,21 +1,42 @@
-# React + TypeScript + Vite + shadcn/ui
+# Fretwise
 
-This is a template for a new Vite project with React, TypeScript, and shadcn/ui.
+A guitar practice tool built with React, TypeScript, and Vite.
 
-## Adding components
+## Features
 
-To add components to your app, run the following command:
+### Random Notes
+Generate a random set of notes, locate them on the fretboard, and use the metronome to time yourself. Great for building fretboard familiarity.
+
+### Fingering Practice
+Eight interactive fretboard exercises from a beginner exercise sheet:
+- Spider (chromatic 1-2-3-4 across all strings)
+- G Minor Pentatonic Scale
+- C Major Scale (Open Position)
+- G Major Scale (Open Position)
+- G Major Scale (3 Notes Per String)
+- 4 Note Ascending Pattern
+- A Minor Scale
+- A Minor Scale V2
+
+### Octave Shapes
+Visualize all four guitar octave shapes. Pick any root note from the dropdown and see every valid root + octave position highlighted across the full fretboard (frets 0–12).
+
+### Metronome
+Fixed bottom-right corner. BPM slider, ±1 nudge buttons, and time signature selector (2/4/6 beats per measure).
+
+### Recorder
+Fixed bottom-left corner. Records from your microphone, stores takes in IndexedDB (persists across reloads), supports in-app playback, and saves files to disk via browser download.
+
+## Stack
+
+- React 19 + TypeScript
+- Vite
+- Tailwind CSS v4
+- shadcn/ui (base-ui)
+
+## Dev
 
 ```bash
-npx shadcn@latest add button
-```
-
-This will place the ui components in the `src/components` directory.
-
-## Using components
-
-To use the components in your app, import them as follows:
-
-```tsx
-import { Button } from "@/components/ui/button"
+npm install
+npm run dev
 ```
