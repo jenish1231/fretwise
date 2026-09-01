@@ -25,7 +25,7 @@ Visualize all four guitar octave shapes. Pick any root note from the dropdown an
 Fixed bottom-right corner. BPM slider, ±1 nudge buttons, and time signature selector (2/4/6 beats per measure).
 
 ### Recorder
-Fixed bottom-left corner. Records from your microphone, stores takes in IndexedDB (persists across reloads), supports in-app playback, and saves files to disk via browser download.
+Fixed bottom-left corner. Records from your microphone and stores takes locally in the browser's IndexedDB — no data leaves your device. Recordings persist across page reloads. Supports in-app playback and saving files to disk via browser download.
 
 ## Stack
 
